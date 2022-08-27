@@ -10,16 +10,17 @@
   border: none;
 }
 
-
 .example-card {
-  max-width: 400px;
+  max-width: 500px;
   height: 180px;
   margin-bottom: 8px;
   border: none;
   border-radius: 0;
   display: flex;
   justify-content: center;
+  box-shadow: rgba(139, 125, 163, 0.15) 0px 8px 24px;
 }
+
 
 .mat-card-title {
   color: #593abc;
@@ -30,8 +31,12 @@
   font-size: 15px;
 }
 
+.categoryIcon {
+  margin-left: 40px;
+}
 .categoryTexts {
   padding-right: 25px;
+  margin-left: 50px;
 }
 
 .col-md-6 {
