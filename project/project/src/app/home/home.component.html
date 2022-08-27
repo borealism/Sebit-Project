@@ -1,16 +1,22 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
+<div class="container home">
+  <div class="row mt-5 d-flex justify-content-center">
+    <div class="col-md-6" *ngFor="let category of categData">
       <mat-card class="example-card">
-        <mat-card-title-group>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-        </mat-card-title-group>
-        <mat-card-content>
-          <!-- {{longText}} -->
-        </mat-card-content>
+        <div class="divCard">
+          <div class="categoryIcon">
+            <svg-icon src="./assets/{{category.icon}}" [svgStyle]="{'width.px':52}"></svg-icon>
+              <!-- <img mat-card-md-image src=".../assets/{{category.icon}}" alt=""> -->
+          </div>
+          <div class="categoryTexts">
+            <mat-card-title-group>
+              <mat-card-title>{{category.name}}</mat-card-title>
+            </mat-card-title-group>
+            <mat-card-content>
+              {{category.description}}
+            </mat-card-content>
+          </div>
+        </div>
       </mat-card>
-
     </div>
   </div>
 </div>
