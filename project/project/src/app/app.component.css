@@ -1,0 +1,41 @@
+.header {
+  background-color: #583abc;
+}
+
+.heading > h1 {
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.inputArea {
+  position: relative;
+  width: 70%;
+}
+
+.inputArea > span {
+  position: absolute;
+  left: -10px;
+  padding: 13px 20px;
+}
+
+.input {
+  background: #7961c9;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  color: white;
+  padding-left: 60px;
+}
+::placeholder {
+  color: white;
+}
