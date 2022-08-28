@@ -14,13 +14,14 @@
 
 
 .example-card {
-  max-width: 1000px;
-  height: 200px;
+  max-width: 800px;
+  height: 230px;
   margin-bottom: 8px;
   border: none;
   border-radius: 0;
   display: flex;
-  justify-content: center;
+  justify-content:flex-start;
+  box-shadow: rgba(139, 125, 163, 0.15) 0px 8px 24px;
 }
 
 
@@ -32,17 +33,58 @@
   font-size: 15px;
 }
 
+.mat-flat-button {
+  background-color:#7a5dd6;
+  color: white;
+  height: 24px;
+  line-height: 24px;
+}
+
 
 .categoryTexts {
   padding-right: 25px;
   margin-left: 25px;
 }
 
-.cardContent>p {
-  width: 160px;
-  display: -webkit-box;
+.mat-card-content>p {
+  width: auto;
+  max-width: 90ch;
+  display:-webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient:vertical;
   overflow: hidden;
+  margin-left: 10px;
 }
 
+.mat-card-content>h2 {
+  margin-bottom: 8px;
+  margin-left: 10px;
+  color: #7a5dd6;
+}
+
+.postMain {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.buttonDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.profilePicDiv>img {
+  border-radius: 50%;
+  height: 40px;
+  width: auto;
+}
+
+.profilePicDiv {
+  margin-left: 10px;
+  margin-right: 20px;
+}

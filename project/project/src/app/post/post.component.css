@@ -1,0 +1,59 @@
+.nav {
+  padding-left: 12px;
+}
+
+.example-card {
+  max-width: 1000px;
+  height: auto;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  justify-content:flex-start;
+  box-shadow: rgba(139, 125, 163, 0.15) 0px 8px 24px;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  height: 30px;
+}
+
+.profileInfoDiv>p {
+  background-color: #7a5dd6;
+  color: #f9f9fc;
+  padding: 5px;
+}
+
+.dateInfo {
+  display: flex;
+  justify-content: center;
+}
+
+
+.dateInfo>p {
+  color: #7a5dd6;
+  background-color: #f9f9fc;
+  padding: 5px;
+  margin-bottom: 0 !important;
+}
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tagBut {
+  margin: 0 2px;
+}
+
+.tagPdiv {
+  padding-top: 5px;
+  align-items: center;
+}
+
+.tagPdiv>p{
+  margin: 0;
+}

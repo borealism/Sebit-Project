@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { CategoryComponent } from './category/category.component';
 import { PostComponent } from './post/post.component';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { PostComponent } from './post/post.component';
     MatCardModule,
     HttpClientModule,
     MatIconModule,
-    AngularSvgIconModule.forRoot()
+    AngularSvgIconModule.forRoot(),
+    MatButtonModule
   ],
   providers: [BaseService],
   bootstrap: [AppComponent]
