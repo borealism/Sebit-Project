@@ -15,4 +15,9 @@ export class CategoryService extends BaseService {
    public getCategory() {
     return this.base.getReq('/categories');
    }
+
+   // Tek kategoriyi çekme
+   public getCateg(categId:any) {
+    return this.base.getReq('/categories/'+categId);
+   }
 }

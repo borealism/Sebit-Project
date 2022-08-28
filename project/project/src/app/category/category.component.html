@@ -1,0 +1,42 @@
+<div class="container mt-3">
+  <div class="row">
+    <nav class="nav" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/home">Home Page</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{categObj.name}}</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="row mt-3">
+    <div class="categoryHeading">
+      <div class="divCard">
+        <div class="categoryIcon">
+          <svg-icon src="./assets/{{categObj.icon}}" [svgStyle]="{'width.px':52}"></svg-icon>
+        </div>
+        <div class="categoryTexts">
+          <mat-card-title-group>
+            <mat-card-title>{{categObj.name}}</mat-card-title>
+          </mat-card-title-group>
+          <mat-card-content>
+            {{categObj.description}}
+          </mat-card-content>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="categPosts" *ngFor="let post of postData">
+    <mat-card class="example-card">
+      <mat-card-content>
+        <h3>{{post.title}}</h3>
+        <p>
+          {{post.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image" src="/project/project/src/assets/resources/images/profile.png"></div>
+        <mat-card-title>{{post.author}}</mat-card-title>
+        <mat-card-subtitle>{{post.date}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </div>

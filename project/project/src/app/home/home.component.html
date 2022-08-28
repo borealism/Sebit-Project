@@ -1,7 +1,7 @@
 <div class="container home">
   <div class="row mt-5 d-flex justify-content-center">
     <div class="col-md-6" *ngFor="let category of categData">
-      <mat-card class="example-card">
+      <mat-card class="example-card" [routerLink]="'/category/'+category.id">
         <div class="divCard">
           <div class="categoryIcon">
             <svg-icon src="./assets/{{category.icon}}" [svgStyle]="{'width.px':52}"></svg-icon>

@@ -12,7 +12,12 @@ export class PostService extends BaseService {
     super(base.http)
    }
 
-   public getPost(){
+   public getPosts(){
     return this.base.getReq('/posts')
+   }
+
+   //Tek postu çekme
+   public getPost(postId:any){
+    return this.base.getReq('/posts/'+postId)
    }
 }

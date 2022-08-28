@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoryService } from '../services/category.service';
+import { Router } from '@angular/router';
 
 
 
@@ -13,7 +14,7 @@ export class HomeComponent implements OnInit {
   categData: Array<any> = [];
 
   constructor(
-    private categService: CategoryService,
+    private categService: CategoryService, private router: Router
   ) {}
 
 

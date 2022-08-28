@@ -1,0 +1,35 @@
+
+.divCard {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+  border: none;
+}
+
+.example-card {
+  max-width: 500px;
+  height: 180px;
+  margin-bottom: 8px;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.mat-card-title {
+  font-size: 22px;
+}
+
+.mat-card-content {
+  font-size: 15px;
+}
+
+.categoryTexts {
+  padding-right: 25px;
+  margin-left: 25px;
+}
+
+
+

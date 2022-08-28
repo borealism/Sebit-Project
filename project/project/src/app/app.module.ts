@@ -11,11 +11,15 @@ import { BaseService } from './services/base.service';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import { AngularSvgIconModule } from 'angular-svg-icon';
+import { CategoryComponent } from './category/category.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CategoryComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
