@@ -1,4 +1,4 @@
-<div class="container mt-3">
+<div class="container mt-5">
   <div class="row">
     <nav class="nav" aria-label="breadcrumb">
       <ol class="breadcrumb">
@@ -15,7 +15,7 @@
         </div>
         <div class="categoryTexts">
           <mat-card-title-group>
-            <mat-card-title>{{categObj.name}}</mat-card-title>
+            <mat-card-title>{{categObj.name}} ({{postData?.length}})</mat-card-title>
           </mat-card-title-group>
           <mat-card-content>
             {{categObj.description}}
@@ -25,16 +25,18 @@
     </div>
   </div>
 
-  <div class="categPosts" *ngFor="let post of postData">
+  <div class="categPosts mt-5" *ngFor="let post of postData">
     <mat-card class="example-card">
       <mat-card-content>
-        <h3>{{post.title}}</h3>
-        <p>
-          {{post.description}}
-        </p>
+        <div class="cardContent">
+          <h2>{{post.title}}</h2>
+          <p>
+            {{post.description}}
+          </p>
+        </div>
       </mat-card-content>
       <mat-card-header>
-        <div mat-card-avatar class="example-header-image" src="/project/project/src/assets/resources/images/profile.png"></div>
+        <img src="/project/project/src/assets/resources/images/profile.png" alt="" width="auto">
         <mat-card-title>{{post.author}}</mat-card-title>
         <mat-card-subtitle>{{post.date}}</mat-card-subtitle>
       </mat-card-header>

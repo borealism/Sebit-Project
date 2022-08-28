@@ -1,4 +1,4 @@
-.container {
+.mainDiv {
   background-color: #583abc;
 }
 
@@ -19,7 +19,7 @@
 
 .inputArea {
   position: relative;
-  width: 75%;
+  width: 100%;
 }
 
 .inputArea > span {
