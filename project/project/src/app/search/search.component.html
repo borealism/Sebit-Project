@@ -1,0 +1,46 @@
+<div class="container mt-5">
+  <div class="row">
+    <nav class="nav" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/home">Home Page</a></li>
+      </ol>
+    </nav>
+  </div>
+  <div class="row mt-2">
+    <div class="categoryHeading">
+      <div class="divCard">
+        <mat-card-title-group>
+          <mat-card-title>Filtered posts by: {{keyword}}</mat-card-title>
+        </mat-card-title-group>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardsMainDiv mt-3">
+    <div class="categPosts my-3" *ngFor="let post of postData">
+      <mat-card class="example-card">
+        <div class="postMainDiv">
+          <div class="cardContent">
+            <mat-card-content>
+              <h2 [routerLink]="'/post/'+post.id">{{post.title}}</h2>
+              <p>
+                {{post.description}}
+              </p>
+              <div class="buttonDiv">
+                <button mat-flat-button [routerLink]="'/post/'+post.id">read more</button>
+              </div>
+            </mat-card-content>
+          </div>
+          <div class="cardInfo">
+            <div class="profilePicDiv">
+              <img src="./assets/profile.png" alt="" width="100">
+            </div>
+            <div class="profileInfoDiv">
+              <p>Written by <strong>{{post.author}}</strong></p>
+              <mat-card-subtitle>{{post.date | date:'longDate'}}</mat-card-subtitle>
+            </div>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>

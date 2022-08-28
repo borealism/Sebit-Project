@@ -14,6 +14,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { CategoryComponent } from './category/category.component';
 import { PostComponent } from './post/post.component';
 import {MatButtonModule} from '@angular/material/button';
+import { SearchComponent } from './search/search.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
     AppComponent,
     HomeComponent,
     CategoryComponent,
-    PostComponent
+    PostComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatIconModule,
     AngularSvgIconModule.forRoot(),
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   providers: [BaseService],
   bootstrap: [AppComponent]
